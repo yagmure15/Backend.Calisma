@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  customerservice:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=;http://+:80
+    ports:
+      - "80:80"
+  orderservice:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=;http://+:80
+    ports:
+      - "8002:80"

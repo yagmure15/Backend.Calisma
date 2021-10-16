@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  customerservice:
+    image: yagmure15/customerservice
+    container_name: customerservice
+    build: 
+      context: .
+      dockerfile: customerservice/Dockerfile
+  orderservice:
+    image: yagmure15/orderservice
+    container_name: orderservice
+    build:
+      context: .
+      dockerfile: orderservice/Dockerfile
